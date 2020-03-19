@@ -1,0 +1,8 @@
+prefix=/home/icd/catkin_ws/install
+
+Name: srv_test
+Description: Description of srv_test
+Version: 0.0.0
+Cflags: -I/home/icd/catkin_ws/install/include
+Libs: -L/home/icd/catkin_ws/install/lib -lsrv_test
+Requires: roscpp rospy std_msgs

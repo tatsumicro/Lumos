@@ -1,0 +1,8 @@
+prefix=/home/icd/catkin_ws/devel
+
+Name: wizavo
+Description: Description of wizavo
+Version: 0.0.0
+Cflags: -I/home/icd/catkin_ws/devel/include
+Libs: -L/home/icd/catkin_ws/devel/lib -lsrv_test
+Requires: roscpp rospy std_msgs

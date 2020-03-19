@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="wizavo" name="wizavo" type="wizavo_server.py" output="screen"/>
+</launch>

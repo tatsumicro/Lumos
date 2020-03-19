@@ -1,0 +1,44 @@
+<launch>
+    <node name="dynamixel_manager" pkg="dynamixel_controllers" type="controller_manager.py" required="true" output="screen">
+        <rosparam>
+            namespace: dxl_manager
+            serial_ports:
+                pan_tilt_port:
+                    port_name: "/dev/ttyUSB0"
+                    baud_rate: 1000000
+                    min_motor_id: 1
+                    max_motor_id: 4
+                    update_rate: 20
+        </rosparam>
+    </node>
+
+    <rosparam file="$(find my_dynamixel_tutorial)/dmitry.yaml" command="load"/>
+    <node name="servo1_controller_spawner" pkg="dynamixel_controllers" type="controller_spawner.py"
+          args="--manager=dxl_manager
+                --port pan_tilt_port
+                servo1_controller"
+          output="screen"/>
+
+    <node name="servo2_controller_spawner" pkg="dynamixel_controllers" type="controller_spawner.py"
+          args="--manager=dxl_manager
+                --port pan_tilt_port
+                servo2_controller"
+          output="screen"/>
+
+    <node name="servo3_controller_spawner" pkg="dynamixel_controllers" type="controller_spawner.py"
+          args="--manager=dxl_manager
+                --port pan_tilt_port
+                servo3_controller"
+          output="screen"/>
+
+    <node name="servo4_controller_spawner" pkg="dynamixel_controllers" type="controller_spawner.py"
+          args="--manager=dxl_manager
+                --port pan_tilt_port
+                servo4_controller"
+          output="screen"/>
+
+    <node pkg="my_dynamixel_tutorial" name="servo" type="servo_manager"/>
+    
+    <node pkg="okao" name="okao_left" type="execution_left.py"/>
+    <node pkg="okao" name="okao_right" type="execution_right.py"/>
+</launch>

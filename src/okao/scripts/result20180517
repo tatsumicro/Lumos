@@ -1,0 +1,10 @@
+・各変数にOKAOのデータを入れる
+・(変数名, 型， データ)
+
+('face_count', <type 'int'>, 2)
+('tracking_id', <type 'list'>, [0, 1])
+('x', <type 'list'>, [837, 1047])
+('y', <type 'list'>, [725, 583])
+('size', <type 'list'>, [154, 240])
+('conf', <type 'list'>, [630, 541])
+

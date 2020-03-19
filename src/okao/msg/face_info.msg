@@ -1,0 +1,10 @@
+int32 face_count
+int32[] id
+int32[] x
+int32[] y
+int32[] size
+int32[] conf
+int32[] LR
+int32[] UD
+int32[] gazeLR
+int32[] gazeUD

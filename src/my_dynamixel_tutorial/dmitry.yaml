@@ -1,0 +1,48 @@
+servo1_controller:
+    controller:
+        package: dynamixel_controllers
+        module: joint_position_controller
+        type: JointPositionController
+    joint_name: servo1_joint
+    joint_speed: 1.17
+    motor:
+        id: 1
+        init: 325
+        min: 325
+        max: 543
+servo2_controller:
+    controller:
+        package: dynamixel_controllers
+        module: joint_position_controller
+        type: JointPositionController
+    joint_name: servo2_joint
+    joint_speed: 1.17
+    motor:
+        id: 2
+        init: 193
+        min: 193
+        max: 412
+servo3_controller:
+    controller:
+        package: dynamixel_controllers
+        module: joint_position_controller
+        type: JointPositionController
+    joint_name: servo3_joint
+    joint_speed: 1.17
+    motor:
+        id: 3
+        init: 341
+        min: 207
+        max: 512
+servo4_controller:
+    controller:
+        package: dynamixel_controllers
+        module: joint_position_controller
+        type: JointPositionController
+    joint_name: servo4_joint
+    joint_speed: 1.17
+    motor:
+        id: 4
+        init: 512
+        min: 162
+        max: 862

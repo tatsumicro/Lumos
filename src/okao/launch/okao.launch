@@ -1,0 +1,6 @@
+<launch>
+<group ns="lumos">
+    <node pkg="okao" name="okao" type="execution.py" output="screen"/>
+</group>
+</launch>
+

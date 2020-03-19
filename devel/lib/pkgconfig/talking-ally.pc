@@ -1,0 +1,8 @@
+prefix=/home/icd/catkin_ws/devel
+
+Name: talking-ally
+Description: Description of talking-ally
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/icd/catkin_ws/devel/lib 
+Requires: 

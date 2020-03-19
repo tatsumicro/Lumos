@@ -1,0 +1,2 @@
+lumos:my_dynamixel_tutorial:okao:srv_test:talking-ally:wizavo
+-DCATKIN_DEVEL_PREFIX=/home/icd/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/icd/catkin_ws/install -G Unix Makefiles
